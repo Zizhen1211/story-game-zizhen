@@ -1,1 +1,148 @@
-<!-- Add your index page here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Missing Painting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>The Missing Painting</h1>
+    <p>A story game about art, memories, and a missing painting.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Welcome</h2>
+
+      <p>
+        You are a young artist preparing for an art exhibition.
+        One day, your important painting suddenly disappears.
+      </p>
+
+      <img src="./images/bedroom.png" alt="Bedroom">
+
+<img src="./images/painting.png" alt="Painting">
+
+      <!-- This is a comment -->
+
+    </section>
+
+    <section>
+      <h2>Before You Start</h2>
+
+      <p>
+        Fill out this form before entering the story.
+      </p>
+
+      <form action="game.html" method="get">
+
+        <label for="name">Your name:</label>
+        <br>
+
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        >
+
+        <br><br>
+
+        <label for="art">Choose your favorite type of art:</label>
+        <br>
+
+        <select id="art" name="art">
+          <option value="drawing">Drawing</option>
+          <option value="painting">Painting</option>
+          <option value="digital">Digital Art</option>
+        </select>
+
+        <br><br>
+
+        <p>Where would you look first?</p>
+
+        <input
+          type="radio"
+          id="computer"
+          name="place"
+          value="computer"
+          required
+        >
+        <label for="computer">Computer</label>
+
+        <br>
+
+        <input
+          type="radio"
+          id="desk"
+          name="place"
+          value="desk"
+        >
+        <label for="desk">Desk</label>
+
+        <br>
+
+        <input
+          type="radio"
+          id="easel"
+          name="place"
+          value="easel"
+        >
+        <label for="easel">Easel</label>
+
+        <br><br>
+
+        <label for="feeling">How are you feeling?</label>
+        <br>
+
+        <input
+          type="text"
+          id="feeling"
+          name="feeling"
+          placeholder="Scared, curious, excited..."
+        >
+
+        <br><br>
+
+        <input
+          type="checkbox"
+          id="ready"
+          name="ready"
+          value="yes"
+        >
+
+        <label for="ready">I am ready to start.</label>
+
+        <br><br>
+
+        <button type="submit">Start Game</button>
+
+      </form>
+    </section>
+
+    <section>
+      <h2>More</h2>
+
+      <p>
+        Want to know more about me and this project?
+      </p>
+
+      <a href="aboutme.html">About Me</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Created by Zizhen Wu</p>
+  </footer>
+
+</body>
+
+</html>
