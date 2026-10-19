@@ -1,60 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
 
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>The Missing Painting | Game</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
 </head>
-<body>
-    <header>
-      <nav>
-            <ul> 
-                <li><a href="index.html">Home</a></li>
-            </ul>
-            <ul> 
-                <li><a href="game.html">Play the game</a></li>
-            </ul>
-            <ul> 
-                <li><a href="about.html">About the creator</a></li>
-            </ul>
-        </nav>
+
+<body class="game-page">
+
+  <div class="game" id="game">
+
+    <figure class="scene-figure">
+
+      <img
+        id="scene-image"
+        src="images/1.0.png"
+        alt="A bedroom at sunset with a desk and a glowing laptop."
+      >
+
+      <figcaption id="scene-caption">
+        Evening sunlight falls across a quiet bedroom.
+      </figcaption>
+
+    </figure>
+
+    <header class="game-header">
+
+      <div class="game-heading">
+
+        <h1>
+          The Missing Painting
+        </h1>
+
+        <p class="goal-text" id="goal-text">
+          Goal: Remember what happened.
+        </p>
+
+      </div>
+
+      <div class="location">
+
+        <p class="chapter-text" id="chapter-text">
+          Prologue
+        </p>
+
+        <h2 id="location-title">
+          Bedroom at Sunset
+        </h2>
+
+        <p id="progress-text">
+          The night before the exhibition
+        </p>
+
+      </div>
+
+      <button
+        class="menu-button"
+        id="menu-button"
+        type="button"
+      >
+        Menu
+      </button>
+
     </header>
 
-    <main>
-    <header>
-        <h1 id="scene-title">  </h1>
-        <h2 id="character-name">  </h2>
-    </header>
-    
-    <section>
-    <p id="scene-text">     </p>
+    <main class="game-main">
 
-    </section>
+      <aside class="inventory" aria-label="Inventory">
 
-    <section>
-        <div id="choices-container"> </div>
-    </section>   
-        
-    <section>
-        <p> Current HP:</p>
-        <ul>
-            <li id="health-display"> 100</li>
-        </ul>
+        <details id="inventory-details">
 
-        <p> Inventory:</p>
-        <ul>
-            <li id="inventory-display"> </li>
-        </ul>
+          <summary>
+            Inventory
 
-        <p id="message-display"></p>
-    </section>
+            <span
+              class="inventory-count"
+              id="inventory-count"
+            >
+              0 / 2
+            </span>
+          </summary>
 
+          <ul id="inventory-list">
 
+            <li class="empty-inventory">
+              No items collected yet.
+            </li>
+
+          </ul>
+
+        </details>
+
+      </aside>
+
+      <section
+        class="dialogue"
+        aria-labelledby="story-title"
+      >
+
+        <div class="story-scroll" id="story-scroll">
+
+          <h2 id="story-title">
+            Before the Dream
+          </h2>
+
+          <div
+            class="story-text"
+            id="story-text"
+            aria-live="polite"
+          >
+            <p>
+              The story is loading.
+            </p>
+          </div>
+
+          <section
+            class="memory-puzzle"
+            id="memory-puzzle"
+            aria-labelledby="memory-puzzle-title"
+            hidden
+          >
+
+            <h3 id="memory-puzzle-title">
+              Share the Memories
+            </h3>
+
+            <p id="puzzle-instructions">
+              Open the inventory. Drag each memory into the
+              correct space, or click an item to place it.
+            </p>
+
+            <div class="memory-slots">
+
+              <div
+                class="memory-slot"
+                data-accept="sketchbook"
+                tabindex="0"
+              >
+
+                <span class="slot-label">
+                  Old Sketchbook
+                </span>
+
+                <span class="slot-status">
+                  Drop item here
+                </span>
+
+              </div>
+
+              <div
+                class="memory-slot"
+                data-accept="friendNote"
+                tabindex="0"
+              >
+
+                <span class="slot-label">
+                  Friend’s Note
+                </span>
+
+                <span class="slot-status">
+                  Drop item here
+                </span>
+
+              </div>
+
+            </div>
+
+            <button
+              class="primary-choice"
+              id="share-memories-button"
+              type="button"
+              disabled
+            >
+              Share the memories
+            </button>
+
+          </section>
+
+          <div class="choices" id="choices">
+          </div>
+
+          <p
+            class="game-message"
+            id="game-message"
+            aria-live="polite"
+          >
+          </p>
+
+        </div>
+
+      </section>
     </main>
-    <footer>
+
+    <footer class="game-footer">
+
+      <span id="player-label">
+        Player
+      </span>
+
+      <span>
+        Created by Zizhen Wu
+      </span>
 
     </footer>
+
+    <dialog class="game-menu" id="game-menu">
+
+      <h2>
+        Game Menu
+      </h2>
+
+      <p>
+        You can return to the story or start again.
+      </p>
+
+      <div class="menu-actions">
+
+        <button id="resume-button" type="button">
+          Resume
+        </button>
+
+        <button id="restart-button" type="button">
+          Restart Story
+        </button>
+
+        <a href="index.html">
+          Return Home
+        </a>
+
+      </div>
+
+    </dialog>
+
+  </div>
+
 </body>
 </html>

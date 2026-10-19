@@ -1,110 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>About | The Missing Painting</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="site-page">
 
-  <header>
-    <h1>About Me</h1>
+  <header class="site-header compact-header">
 
-    <p>
-      Hi! My name is Zizhen. I like drawing, games, and digital art.
+    <p class="eyebrow">
+      About the Project
     </p>
+
+    <h1>
+      The Missing Painting
+    </h1>
+
+    <p class="tagline">
+      Created by Zizhen Wu
+    </p>
+
   </header>
 
-  <main>
+  <main class="site-main about-layout">
 
-    <section>
-      <h2>My Art</h2>
+    <section
+      class="about-card"
+      aria-labelledby="about-me-title"
+    >
 
-      <p>
-        Art is important to me because I can use it to show my ideas
-        and feelings.
-      </p>
+      <div>
 
-      <img src="images/sketchbook.png" alt="My sketchbook">
+        <p class="section-number">
+          About Me
+        </p>
 
-      <img src="images/painting.png" alt="My painting">
+        <h2 id="about-me-title">
+          Hi, I’m Zizhen.
+        </h2>
+
+        <p>
+          I am a student who enjoys drawing, visual storytelling,
+          and learning how websites work. I made this project
+          because I wanted to combine a mystery game with a story
+          about confidence and the pressure artists can feel.
+        </p>
+
+        <p>
+          This is one of my first larger story-game projects.
+          I created the scenes, planned the choices, and used
+          HTML, CSS, and JavaScript to turn the idea into a
+          playable webpage.
+        </p>
+
+      </div>
+
+      <img
+        src="images/zz.jpeg"
+        alt="An empty easel in a bedroom at sunset."
+      >
 
     </section>
 
-    <section>
-      <h2>Things I Like</h2>
+    <section
+      class="about-card"
+      aria-labelledby="story-concept-title"
+    >
+
+      <div>
+
+        <p class="section-number">
+          Story Concept
+        </p>
+
+        <h2 id="story-concept-title">
+          Why this story matters
+        </h2>
+
+        <p>
+          The main character believes somebody stole her painting,
+          but the mystery is really connected to memories she has
+          tried to avoid. The dream lets her meet her younger self
+          and understand that fear, not a thief, made the painting
+          disappear.
+        </p>
+
+        <p>
+          The story does not say that one award fixes every problem.
+          Instead, it shows that asking for support and choosing not
+          to hide can be an important beginning.
+        </p>
+
+      </div>
+
+      <img
+        src="images/7.1.png"
+        alt="The finished painting displayed at an art exhibition."
+      >
+
+    </section>
+
+    <section
+      class="list-card"
+      aria-labelledby="project-parts-title"
+    >
+
+      <p class="section-number">
+        Project Notes
+      </p>
+
+      <h2 id="project-parts-title">
+        What the game includes
+      </h2>
 
       <ol>
+
         <li>
-          Art
+          Six main locations
+
           <ul>
-            <li>Drawing</li>
-            <li>Digital painting</li>
-            <li>Character design</li>
+            <li>Bedroom at Sunset</li>
+            <li>Art Classroom</li>
+            <li>Empty School Hallway</li>
+            <li>High School Classroom</li>
+            <li>Sunset Bench</li>
+            <li>Childhood Home</li>
           </ul>
         </li>
 
         <li>
-          Games
+          Two inventory items
+
           <ul>
-            <li>Story games</li>
-            <li>Adventure games</li>
+            <li>Friend’s Note</li>
+            <li>Old Sketchbook</li>
           </ul>
         </li>
 
         <li>
-          Design
-          <ul>
-            <li>Game design</li>
-            <li>Animation</li>
-          </ul>
+          Two possible endings
         </li>
+
       </ol>
 
-      <!-- This sentence will not show on the webpage -->
-
     </section>
 
-    <section>
-      <h2>My Story Game</h2>
+    <nav class="page-links" aria-label="Page links">
 
-      <p>
-        <strong>The Missing Painting</strong> is about a young artist
-        looking for her missing painting.
-      </p>
+      <a
+        class="secondary-button"
+        href="index.html"
+      >
+        Back to Home
+      </a>
 
-      <p>
-        The story includes art, memories, and emotions.
-      </p>
+      <a
+        class="secondary-button"
+        href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn more about HTML
+      </a>
 
-      <p>
-        I chose this idea because I enjoy art and
-        <em>game design</em>.
-      </p>
-    </section>
-
-    <section>
-      <h2>Links</h2>
-
-      <p>
-        <a href="index.html">Back to Home</a>
-      </p>
-
-      <p>
-        <a href="https://www.procreate.com/">
-          Visit Procreate
-        </a>
-      </p>
-
-    </section>
+    </nav>
 
   </main>
 
-  <footer>
-    <p>Created by Zizhen Wu</p>
+  <footer class="site-footer">
+
+    <p>
+      Created by Zizhen Wu | The Missing Painting
+    </p>
+
   </footer>
 
 </body>

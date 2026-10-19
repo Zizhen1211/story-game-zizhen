@@ -1,148 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>The Missing Painting</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="site-page">
 
-  <header>
+  <header class="site-header">
+    <p class="eyebrow">A Story Game</p>
+
     <h1>The Missing Painting</h1>
-    <p>A story game about art, memories, and a missing painting.</p>
+
+    <p class="tagline">
+      A story about art, memories, fear, and finding your own voice.
+    </p>
   </header>
 
-  <main>
+  <main class="site-main">
 
-    <section>
-      <h2>Welcome</h2>
+    <section class="intro-card" aria-labelledby="story-introduction">
 
-      <p>
-        You are a young artist preparing for an art exhibition.
-        One day, your important painting suddenly disappears.
-      </p>
+      <div>
+        <p class="section-number">01 / Introduction</p>
 
-      <img src="./images/bedroom.png" alt="Bedroom">
+        <h2 id="story-introduction">
+          The night before the exhibition
+        </h2>
 
-<img src="./images/painting.png" alt="Painting">
+        <p>
+          You are a young painter preparing for your first city art
+          exhibition. At sunset, you fall asleep at your desk. When
+          you open your eyes, your finished painting is gone and the
+          room has changed into a world made from your memories.
+        </p>
 
-      <!-- This is a comment -->
+        <p>
+          Explore six locations, collect two important items, and
+          discover why the painting disappeared. Your final choice
+          will decide the ending.
+        </p>
+
+        <blockquote>
+          “The painting was hidden. Your voice does not have to be.”
+        </blockquote>
+      </div>
+
+      <img
+        src="images/1.0.png"
+        alt="A quiet bedroom and art desk during a golden sunset."
+      >
 
     </section>
 
-    <section>
-      <h2>Before You Start</h2>
+    <section class="preview-section" aria-labelledby="preview-title">
+
+      <p class="section-number">02 / Story Preview</p>
+
+      <h2 id="preview-title">
+        Memories you will visit
+      </h2>
+
+      <div class="preview-grid">
+
+        <figure>
+          <img
+            src="images/2.png"
+            alt="An art classroom filled with students painting."
+          >
+
+          <figcaption>
+            The art classroom
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/5.png"
+            alt="A friend waiting on a bench at sunset."
+          >
+
+          <figcaption>
+            The sunset bench
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/6.3.png"
+            alt="A younger girl beside a covered painting."
+          >
+
+          <figcaption>
+            The childhood home
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <section class="start-card" aria-labelledby="start-title">
+
+      <p class="section-number">03 / Begin</p>
+
+      <h2 id="start-title">
+        Before you enter the dream
+      </h2>
 
       <p>
-        Fill out this form before entering the story.
+        Choose how you want to begin. These answers are only used
+        to open the game.
       </p>
 
-      <form action="game.html" method="get">
+      <form action="game.html" method="get" class="start-form">
 
-        <label for="name">Your name:</label>
-        <br>
+        <div class="form-field">
+          <label for="player-name">
+            Your name
+          </label>
 
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your name"
-          required
-        >
+          <input
+            id="player-name"
+            name="playerName"
+            type="text"
+            placeholder="Enter your name"
+            minlength="2"
+            maxlength="20"
+            required
+          >
+        </div>
 
-        <br><br>
+        <div class="form-field">
+          <label for="story-mood">
+            Choose a story mood
+          </label>
 
-        <label for="art">Choose your favorite type of art:</label>
-        <br>
+          <select
+            id="story-mood"
+            name="mood"
+            required
+          >
+            <option value="" selected disabled>
+              Select one
+            </option>
 
-        <select id="art" name="art">
-          <option value="drawing">Drawing</option>
-          <option value="painting">Painting</option>
-          <option value="digital">Digital Art</option>
-        </select>
+            <option value="quiet">
+              Quiet and reflective
+            </option>
 
-        <br><br>
+            <option value="hopeful">
+              Hopeful
+            </option>
 
-        <p>Where would you look first?</p>
+            <option value="mysterious">
+              Mysterious
+            </option>
+          </select>
+        </div>
 
-        <input
-          type="radio"
-          id="computer"
-          name="place"
-          value="computer"
-          required
-        >
-        <label for="computer">Computer</label>
+        <fieldset>
+          <legend>
+            What would you do if your painting disappeared?
+          </legend>
 
-        <br>
+          <label class="radio-row">
+            <input
+              type="radio"
+              name="firstChoice"
+              value="search"
+              required
+            >
 
-        <input
-          type="radio"
-          id="desk"
-          name="place"
-          value="desk"
-        >
-        <label for="desk">Desk</label>
+            Search the room carefully
+          </label>
 
-        <br>
+          <label class="radio-row">
+            <input
+              type="radio"
+              name="firstChoice"
+              value="friend"
+            >
 
-        <input
-          type="radio"
-          id="easel"
-          name="place"
-          value="easel"
-        >
-        <label for="easel">Easel</label>
+            Call a trusted friend
+          </label>
 
-        <br><br>
+          <label class="radio-row">
+            <input
+              type="radio"
+              name="firstChoice"
+              value="hide"
+            >
 
-        <label for="feeling">How are you feeling?</label>
-        <br>
+            Pretend nothing happened
+          </label>
+        </fieldset>
 
-        <input
-          type="text"
-          id="feeling"
-          name="feeling"
-          placeholder="Scared, curious, excited..."
-        >
+        <label class="check-row">
+          <input
+            type="checkbox"
+            name="captions"
+            value="on"
+            checked
+          >
 
-        <br><br>
+          Show scene captions
+        </label>
 
-        <input
-          type="checkbox"
-          id="ready"
-          name="ready"
-          value="yes"
-        >
-
-        <label for="ready">I am ready to start.</label>
-
-        <br><br>
-
-        <button type="submit">Start Game</button>
+        <button class="primary-button" type="submit">
+          Enter the Dream
+        </button>
 
       </form>
-    </section>
 
-    <section>
-      <h2>More</h2>
-
-      <p>
-        Want to know more about me and this project?
+      <p class="small-link">
+        <a href="aboutme.html">
+          Read about the creator and the story
+        </a>
       </p>
 
-      <a href="aboutme.html">About Me</a>
     </section>
 
   </main>
 
-  <footer>
-    <p>Created by Zizhen Wu</p>
+  <footer class="site-footer">
+    <p>
+      Created by Zizhen Wu | The Missing Painting
+    </p>
   </footer>
 
 </body>
-
 </html>
