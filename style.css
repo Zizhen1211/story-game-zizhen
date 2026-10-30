@@ -23,9 +23,27 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
   color: var(--ink);
   background: var(--deep);
+}
+
+
+/* Reusable heading class */
+.heading {
+  color: var(--ink);
+  font-family: "Cinzel", Georgia, serif;
+  letter-spacing: 0.03em;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.75);
+}
+
+/* Reusable card class */
+.card {
+  margin-bottom: 54px;
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background-color: rgba(27, 22, 32, 0.8);
 }
 
 button,
@@ -64,7 +82,7 @@ select:focus-visible,
   text-align: center;
   background:
     linear-gradient(rgba(22, 14, 28, 0.72), rgba(22, 14, 28, 0.9)),
-    url("images/1.png") center 45% / cover;
+    url("images/1.0.png") center 45% / cover;
   border-bottom: 1px solid var(--line);
 }
 
@@ -76,7 +94,7 @@ select:focus-visible,
 .site-header h1 {
   max-width: 900px;
   margin: 8px auto 12px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
   font-size: clamp(2.5rem, 7vw, 5.4rem);
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -132,7 +150,7 @@ select:focus-visible,
 
 .site-main h2 {
   margin: 10px 0 18px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
   font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 500;
 }
@@ -148,7 +166,7 @@ blockquote {
   margin: 24px 0 0;
   padding: 16px 20px;
   color: #e9d7bd;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
   font-size: 1.15rem;
   line-height: 1.6;
   border-left: 3px solid var(--gold);
@@ -414,7 +432,7 @@ fieldset {
 .game-heading h1 {
   margin: 0;
   overflow: hidden;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
   font-size: clamp(1rem, 2vw, 1.3rem);
   font-weight: 500;
   text-overflow: ellipsis;
@@ -447,7 +465,7 @@ fieldset {
 
 .location h2 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
   font-size: clamp(0.9rem, 1.8vw, 1.15rem);
   font-weight: 500;
 }
@@ -582,7 +600,7 @@ button.inventory-item:active {
 
 .dialogue h2 {
   margin: 0 0 8px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
   font-size: clamp(1.05rem, 2.4vw, 1.35rem);
   font-weight: 500;
 }
@@ -666,7 +684,7 @@ button.inventory-item:active {
 .memory-puzzle h3 {
   margin: 0 0 7px;
   color: #ead6b8;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
   font-size: 1rem;
 }
 
@@ -753,7 +771,7 @@ button.inventory-item:active {
 
 .game-menu h2 {
   margin: 0 0 8px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
 }
 
 .game-menu p {
